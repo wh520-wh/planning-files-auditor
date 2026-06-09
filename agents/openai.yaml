@@ -1,0 +1,7 @@
+interface:
+  display_name: "Planning Files Auditor"
+  short_description: "审计规划文件中的完成声明、证据质量、交付风险，并生成修复提示词。"
+  default_prompt: "使用 $planning-files-auditor 审计当前 planning-with-files-zh 任务是否真实完成，并输出交付风险和修复提示词。"
+
+policy:
+  allow_implicit_invocation: true
