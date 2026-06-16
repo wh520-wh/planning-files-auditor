@@ -4,7 +4,9 @@
 [![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](./CHANGELOG.md)
 [![Skills Standard](https://img.shields.io/badge/Agent%20Skills-compatible-blueviolet)](http://agentskills.io)
 
-> 专门为 **planning-with-files-zh** 设计的审计 skill，审计其工作流产出的 `task_plan.md` / `findings.md` / `progress.md` 中**声称的完成结果**，输出证据核验报告、修复提案和给原执行者的修复提示词。
+> **AI 说完成了，我看证据。**
+>
+> `planning-with-files-zh` 的官方质检岗——揪出 AI 自己声称 “已完成” 但代码里查不到证据的虚假完成。
 
 ## 看一眼输出长什么样
 
