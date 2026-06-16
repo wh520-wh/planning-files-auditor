@@ -6,6 +6,22 @@
 
 > 专门为 **planning-with-files-zh** 设计的审计 skill，审计其工作流产出的 `task_plan.md` / `findings.md` / `progress.md` 中**声称的完成结果**，输出证据核验报告、修复提案和给原执行者的修复提示词。
 
+## 看一眼输出长什么样
+
+跑完后,本 skill 给你一份 13 节标准化报告。第 1 节"总体结论"长这样:
+
+> ## 1. 总体结论
+>
+> - 结论:**失败**
+> - 真实完成度估计:55%
+> - 代码质量评分:6/10
+> - planning-with-files-zh 使用评分:7/10
+> - 审计置信度:中
+> - 交付决定:**不可交付**——存在 P0 安全风险
+> - 主要结论:3 个阶段虚假完成,1 个阶段部分实现,集成测试完全未做;rate-limit 中间件未接入构成 P0 风险。
+
+完整 13 节示例输出 → [`assets/audit-output-example.md`](./assets/audit-output-example.md)
+
 ## 这是什么
 
 当一个 AI（或人）跑完一个 planning-with-files-zh 任务后，它会在 `progress.md` 里写"已完成"、"测试通过"、"已部署"等声明。本 skill 把这些声明当作**待核验的声明**，通过读取真实项目证据（源码、`git status`、`git diff`、测试输出、构建日志等）来验证它们是否真的完成。
