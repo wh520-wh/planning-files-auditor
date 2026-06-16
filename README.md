@@ -3,6 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](./CHANGELOG.md)
 [![Skills Standard](https://img.shields.io/badge/Agent%20Skills-compatible-blueviolet)](http://agentskills.io)
+[![Install via npx skills](https://img.shields.io/badge/install-npx%20skills-blueviolet)](https://skills.sh)
+[![planning-with-files-zh](https://img.shields.io/badge/audits-planning--with--files--zh%20v3.0.x--v3.1.x-green)](https://github.com/OthmanAdi/planning-with-files)
 
 > **AI 说完成了，我看证据。**
 >
