@@ -29,7 +29,7 @@
 
 - 没有 planning-with-files-zh 产出的任务（要先有 `task_plan.md` / `findings.md` / `progress.md`）
 - 实时监控 AI 执行过程（这是另外的 skill）
-- 代码 review（这是 [code-review](...) 的活儿）
+- 代码 review(这是另一类 skill 的活儿;本 skill 只审“声称完成是否属实”,不做代码风格/正确性 review)
 
 ## 安装
 
