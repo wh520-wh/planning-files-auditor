@@ -5,6 +5,24 @@ description: 用于审计 planning-with-files-zh 产出的 task_plan.md、findin
 
 # Planning Files Auditor
 
+## 兼容性
+
+**目标对象**:`planning-with-files-zh`(母 skill `OthmanAdi/planning-with-files` 的中文变体)。
+
+**已验证兼容版本**:`planning-with-files` v3.0.x – v3.1.x(截至 2026-06-17)。
+
+**核心解析对象**:
+
+- `task_plan.md`、`findings.md`、`progress.md`(三件套,审计范围主体)
+- `.active_plan`(当前活动 plan 指针,v3.1+ 引入)
+- `.attestation/`(完成证明目录,v3.1+ 引入)
+
+**版本漂移政策**:
+
+- 母 skill 若发布新主要版本(v4.x+)引入新字段或新文件,本 skill 在跟随升级前会**把不识别的字段一律标记为 `未验证`**,而不是猜测、忽略或假阳性通过。
+- 若发现某字段无法解释,请在本仓库 issue 区附上母 skill 版本号与字段示例,本 skill 会在下一次发版跟随。
+- 审计置信度会因母 skill 版本差异自动下调,不会沉默地"看起来都对"。
+
 ## 核心原则
 
 根据真实项目证据，审计一次使用 planning-with-files-zh 工作流后的”声称完成结果”。`task_plan.md`、`findings.md` 和 `progress.md` 是审计范围来源，也是待核验的声明，不是证明。
