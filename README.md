@@ -61,7 +61,7 @@ npx skills add https://github.com/wh520-wh/planning-files-auditor --skill planni
 
 ### 方式二：手动安装
 
-将 `SKILL.md`、`agents/openai.yaml` 复制到你的 `~/.claude/skills/planning-files-auditor/` 目录即可。
+将 `SKILL.md`、`agents/openai.yaml` 复制到你的 `~/.claude（或.codex）/skills/planning-files-auditor/` 目录即可。
 
 ## 使用方法
 
